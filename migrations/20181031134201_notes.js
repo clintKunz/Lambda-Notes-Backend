@@ -3,7 +3,6 @@ exports.up = function(knex, Promise) {
         table.increments();
         table
           .integer('user_id')
-          .notNullable()
           .references('id')
           .inTable('users');
         table
